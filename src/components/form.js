@@ -1,48 +1,57 @@
-import React, { useEffect, useState } from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import FormControl from 'react-bootstrap/FormControl';
+import React from 'react';
+import news from '../assets/news.jpg';
+import online from "../assets/online.jpg";
+import reality from "../assets/reality.jpg";
+import Carousel from 'react-bootstrap/Carousel';
+import Spinner from 'react-bootstrap/Spinner';
+
+
 
 const FormStock = () =>{
 
-    const API_KEY = 'Y4NYBY6LJCDUVZQN	'; 
-
-    // gets recipe data and displays it
-    let [stocks, setStocks] = useState([]);
-  
-    const [query, setQuery] = useState('')
-  
-    const [search, setSearch] = useState("");
-  
-    useEffect(()=>{
-      getStocks()
-    }, [query]);
-  
-  
-    const getStocks = async ()=>{
-      const response = await fetch( `https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${query}&apikey=${API_KEY}`);
-      let data = await response.json();
-      console.log(data);
-      setStocks(data);
-    };
-  
-    const updateSearch = e =>{
-      setSearch(e.target.value);
-      console.log(search);
-    };
-  
-    const getSearch = e =>{
-      e.preventDefault();
-      setQuery(search);
-      setSearch('');
-    };
-  
     return(
       
-        <Form inline onSubmit={getSearch} className='search_form justify-content-center'>
-            <FormControl type="text" value={search} onChange={updateSearch} placeholder="Search for stocks" className="mr-sm-2 search_bar" />
-            <Button  type="submit"  variant="outline-success">Search</Button>
-        </Form>
+        <div className='container'>
+          <div className='row news_container'>
+
+          <Spinner className='text-center'  size="lg" animation="grow" variant="dark" role="status">
+                <div className="sr-only text-center">Loading...</div>
+           </Spinner>
+
+            <div className="col-lg-6 stock">
+              <Carousel>
+                <Carousel.Item interval={3000}>
+                  <img
+                    className="d-block w-100"
+                    src={online}
+                    alt="First slide"
+                  />
+                  
+                </Carousel.Item>
+                <Carousel.Item interval={3000}>
+                  <img
+                    className="d-block w-100"
+                    src={reality}
+                    alt="Second slide"
+                  />
+                
+                </Carousel.Item>
+                <Carousel.Item interval={3000}>
+                  <img
+                    className="d-block w-100"
+                    src={news}
+                    alt="Third slide"
+                  />
+                  
+                </Carousel.Item>
+              </Carousel>
+            
+            </div>
+            <div className='col-lg-6 stock'>
+              <h2>Have you ever thought of ways to get daily news or updates about the stock market within your comfort zone? Then you've come to the right place <span role="img" aria-label="smile">🥰</span></h2>
+            </div>
+        </div>
+        </div>
      
     )
 };

@@ -4,6 +4,9 @@ import '../App.css';
 import '../bootstrap.min.css';
 import NavbarTab from "../components/navbar";
 import Stock from "./stocks";
+//import Spinner from 'react-bootstrap/Spinner';
+import Button from 'react-bootstrap/Button';
+import { Spinner } from 'react-bootstrap'
 
 const Newsapp = () => {
 
@@ -36,8 +39,14 @@ const Newsapp = () => {
        
       <div className='container'>
         <div className="row news_container">
+
+        <Spinner  animation="grow" className='p-3' variant="dark" role="status">
+             <span className="sr-only p-3 text-center">Loading...</span>
+        </Spinner>
+
           {news.map( list =>(
             
+
             <Stock
 
             key={list.id}
