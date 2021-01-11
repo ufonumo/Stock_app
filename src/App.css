@@ -118,3 +118,31 @@ h1 {
     
   }
 }
+
+/* CURRENCY CONVERTER */
+input.input {
+  padding: 5px 25px 5px 7px;
+  border: 2px solid #941515;
+  border-radius: 8px;
+}
+
+select.select {
+  padding: 8px 50px 8px 7px;
+  margin-left: 10px;
+  border-radius: 6px;
+}
+
+p.equal {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+@media(max-width: 320px){
+  select.select {
+    padding: 8px 5px 8px 7px;
+  }
+
+  input.input {
+    padding: 5px 15px 5px 7px;
+  }
+}

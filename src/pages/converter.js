@@ -56,8 +56,8 @@ export default function Converter() {
     }
 
     return (
-        <div className='search_stock text-center'>
-            <h2> Convert to any currency of your choice</h2>
+        <div className='search_stock text-center container'>
+            <h2 className='pb-4'> Convert to any currency of your choice</h2>
 
             <Convert 
                 currencyOptions={currencyOptions}
@@ -66,7 +66,7 @@ export default function Converter() {
                 amount={fromAmount}
                 onChangeAmount={handleFromAmountChange}
             />
-            ==
+               <p className='equal'>===</p> 
             <Convert 
                 currencyOptions={currencyOptions} 
                 selectedCurrency={resultCurrency}
