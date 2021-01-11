@@ -35,14 +35,16 @@ const Newsapp = () => {
   return (
     <div className="App ">
        
-       <NavbarTab/>
+       {/* <NavbarTab/> */}
        
       <div className='container'>
+
+      {/* <Spinner  animation="grow" className='p-3' variant="dark" role="status">
+             <span className="sr-only p-3 text-center">Loading...</span>
+        </Spinner> */}
         <div className="row news_container">
 
-        <Spinner  animation="grow" className='p-3' variant="dark" role="status">
-             <span className="sr-only p-3 text-center">Loading...</span>
-        </Spinner>
+        
 
           {news.map( list =>(
             

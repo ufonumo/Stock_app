@@ -7,7 +7,7 @@ import {BrowserRouter as Router, Switch, Route,} from "react-router-dom";
 import Newsapp from "./pages/stock_API";
 import UpdateOnstocks from "./pages/update_stocks";
 import FormStock from './components/form';
-
+import Converter from "./pages/converter";
 
 const App = () => {
 
@@ -20,6 +20,7 @@ const App = () => {
           <Route path="/stock_API" isAuthed={true}  component={Newsapp} />
          
           <Route path="/UpdateOnstocks" isAuthed={true} component={UpdateOnstocks}/>
+          <Route path='/Converter' isAuthed={true}  component={Converter}/>
         </Switch>
 
         <NavbarTab/>
