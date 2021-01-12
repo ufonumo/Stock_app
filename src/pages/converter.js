@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Convert from "../components/convert";
 
 
-const API_URL = 'https://api.exchangeratesapi.io/latest ';
+const API_URL = 'https://api.exchangeratesapi.io/latest';
 
 export default function Converter() {
     
@@ -36,14 +36,16 @@ export default function Converter() {
        
     }, []);
 
-    // useEffect(() => {
-    //     if(searchCurrency != null && resultCurrency != null){
-    //         fetch(`${API_URL}?base=${searchCurrency}&symbols=${resultCurrency}`)
-    //         .then(resp => resp.json())
-    //         .then(data => setExchangeRate(data.rates[resultCurrency]))
-    //     }
+    useEffect(() => {
+        if(searchCurrency != null && resultCurrency != null){
+            fetch(`${API_URL}?base=${searchCurrency}`)
+            .then(resp => resp.json())
+            .then(data => {
+                setExchangeRate(data.rates[resultCurrency] ) ;
+            })
+        }
        
-    // }, [searchCurrency, resultCurrency])
+    }, [searchCurrency, resultCurrency])
 
     function handleFromAmountChange (e) {
         setAmount(e.target.value)
