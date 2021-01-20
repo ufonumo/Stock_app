@@ -1,15 +1,24 @@
 import React from "react";
-//import Plot from 'react-plotly.js';
+import Spinner from 'react-bootstrap/Spinner';
 
 
-const Stock = ({heading, summary, image, URL, source, category}) =>{
+const Stock = ({ loading, heading, summary, image, URL, source, category}) =>{
     // const stocks = `https://finnhub.io/api/v1/news?category=general&token=${API_KEY}`
    // for exhange symbols https://finnhub.io/api/v1/stock/symbol?exchange=US&token
-    
-    return(
-        
+   
+//    if(loading){
+//     return <Spinner animation="border" className=' text-center' role="status">
+//                 <span className="sr-only">Loading...</span>
+//             </Spinner>;
+//     }
+
+    return(       
        
         <div className="col-lg-4 stock_item">
+        {/* <Spinner animation="border" className=' text-center' role="status">
+                <span className="sr-only">Loading...</span>
+            </Spinner>;
+             */}
             <div className="stock_head ">
                 <h1>{heading}</h1>
                 <sub className='text-left'>CATEGORY:  {category}</sub>
@@ -19,10 +28,8 @@ const Stock = ({heading, summary, image, URL, source, category}) =>{
                 <p>Source: {source}</p>
 
             </div>
-            
            
         </div>
-            
     )
 };
 

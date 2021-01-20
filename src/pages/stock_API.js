@@ -2,11 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
 import '../bootstrap.min.css';
-import NavbarTab from "../components/navbar";
 import Stock from "./stocks";
-//import Spinner from 'react-bootstrap/Spinner';
-import Button from 'react-bootstrap/Button';
-import { Spinner } from 'react-bootstrap'
+import {Pagination} from "../components/Pagination";
+import Spinner from 'react-bootstrap/Spinner';
 
 const Newsapp = () => {
 
@@ -14,41 +12,47 @@ const Newsapp = () => {
 
   // gets recipe data and displays it
   let [news, setNews] = useState([]);
+  let [currentPage, setCurrentPage] = useState(1);
+  let [newsPerPage] = useState(20);
+  let [loading, setloading] = useState(false);
 
-  const [query, setQuery] = useState('goat')
-
-  const [search, setSearch] = useState("");
 
   useEffect(()=>{
+    
+    const getNews = async ()=>{
+      setloading(true);
+      const response = await fetch( `https://finnhub.io/api/v1/news?category=general&token=${API_KEY}`);
+      let data = await response.json();
+      setNews(data);
+      setloading(false)
+
+    };
+
     getNews()
-  }, [query]);
+  }, []);
 
+  const indexOfLastPost = currentPage * newsPerPage;
+  const indexOfFirstPost = indexOfLastPost - newsPerPage;
+  const currentProfiles = news.slice(indexOfFirstPost, indexOfLastPost);
 
-  const getNews = async ()=>{
-    const response = await fetch( `https://finnhub.io/api/v1/news?category=general&token=${API_KEY}`);
-    let data = await response.json();
-    // console.log(data);
-    setNews(data);
+  const paginate = (pageNumber) =>{
+    setCurrentPage(pageNumber)
   };
 
+  if(loading){
+    return <Spinner animation="border" className=' spinner_border text-center' role="status">
+                <span className="sr-only">Loading...</span>
+            </Spinner>;
+    }
 
   return (
     <div className="App ">
-       
-       {/* <NavbarTab/> */}
-       
+              
       <div className='container'>
-
-      {/* <Spinner  animation="grow" className='p-3' variant="dark" role="status">
-             <span className="sr-only p-3 text-center">Loading...</span>
-        </Spinner> */}
         <div className="row news_container">
 
-        
-
-          {news.map( list =>(
-            
-
+      
+          {currentProfiles.map( list =>(
             <Stock
 
             key={list.id}
@@ -58,8 +62,16 @@ const Newsapp = () => {
             summary={list.summary}
             URL= {list.url}
             category={list.category}
+            loading={loading}
             />
+            
           ))}
+
+          <Pagination
+            profilePerPage={newsPerPage}
+            totalProfiles={news.length}
+              paginate={paginate}
+           />
         </div>
       </div>
       

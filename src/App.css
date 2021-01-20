@@ -156,3 +156,11 @@ p.equal {
     padding: 5px 15px 5px 7px;
   }
 }
+
+.spinner_border{
+  padding-top: 200px ;
+}
+
+.sr-only {
+  position: relative !important;
+}

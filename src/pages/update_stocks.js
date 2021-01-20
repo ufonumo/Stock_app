@@ -13,7 +13,7 @@ const UpdateOnstocks = () => {
 
  const fetchStock = () =>{
     const API_KEY = 'Y4NYBY6LJCDUVZQN';
-    let API_Call = `https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=tesco&apikey=demo=${API_KEY}`;
+    let API_Call = `https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=tesco&apikey=${API_KEY}`;
     let stockChartXValuesFunction = [];
     let stockChartYValuesFunction = [];
     console.log(stockChartYValuesFunction);
