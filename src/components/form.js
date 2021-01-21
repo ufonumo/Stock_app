@@ -80,9 +80,9 @@ const FormStock = () =>{
               </Carousel>
 
         
-          <div className='row news_container'>
+          <div className='row news_container mb-5'>
 
-            <div className="col-lg-6 stock">
+            <div className="col-lg-6 stock ">
               <Carousel>
                 <Carousel.Item interval={3000}>
                   <img
@@ -111,8 +111,8 @@ const FormStock = () =>{
               </Carousel>
             
             </div>
-            <div className='col-lg-6 stock'>
-              <h2>Have you ever thought of ways to get daily news or updates about the stock market within your comfort zone? Then you've come to the right place <span role="img" aria-label="smile">🥰</span></h2>
+            <div className='col-lg-6 stock p-5'>
+              <h4>Have you ever thought of ways to get daily news or updates about the stock market within your comfort zone? Then you've come to the right place <span role="img" aria-label="smile">🥰</span></h4>
             </div>
         </div>
         </div>
