@@ -164,3 +164,7 @@ p.equal {
 .sr-only {
   position: relative !important;
 }
+
+.paginate_nav{
+  width: 100%;
+}

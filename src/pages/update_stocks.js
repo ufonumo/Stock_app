@@ -13,21 +13,22 @@ const UpdateOnstocks = () => {
 
  const fetchStock = () =>{
     const API_KEY = 'Y4NYBY6LJCDUVZQN';
-    let API_Call = `https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=tesco&apikey=${API_KEY}`;
+    let API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${query}&apikey=${API_KEY}`;
     let stockChartXValuesFunction = [];
     let stockChartYValuesFunction = [];
-    console.log(stockChartYValuesFunction);
 
 
     fetch(API_Call)
       .then(
         function(response) {
+          console.log(response);
           return response.json();
+
         }
       )
       .then(
         function(data) {
-
+      
           for (var key in data['Time Series (Daily)']) {
             stockChartXValuesFunction.push(key);
             stockChartYValuesFunction.push(data['Time Series (Daily)'][key]['1. open']);
@@ -107,20 +108,6 @@ const UpdateOnstocks = () => {
             }}
           />
         </div>
-        
-{/* 
-        <Plot
-          data={[
-            {
-              x: this.state.stockChartXValues,
-              y: this.state.stockChartYValues,
-              type: 'scatter',
-              mode: 'lines+markers',
-              marker: {color: 'red'},
-            }
-          ]}
-          layout={{width: 720, height: 440, title: 'A Fancy Plot'}}
-        /> */}
       </div>
     )
   }

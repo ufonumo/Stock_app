@@ -3,8 +3,6 @@ import news from '../assets/news.jpg';
 import online from "../assets/online.jpg";
 import reality from "../assets/reality.jpg";
 import Carousel from 'react-bootstrap/Carousel';
-import Spinner from 'react-bootstrap/Spinner';
-
 
 
 const FormStock = () =>{
@@ -13,10 +11,6 @@ const FormStock = () =>{
       
         <div className='container'>
           <div className='row news_container'>
-
-          <Spinner className='text-center'  size="lg" animation="grow" variant="dark" role="status">
-                <div className="sr-only text-center">Loading...</div>
-           </Spinner>
 
             <div className="col-lg-6 stock">
               <Carousel>

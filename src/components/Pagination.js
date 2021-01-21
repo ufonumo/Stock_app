@@ -10,7 +10,7 @@ export const Pagination = ({profilePerPage, totalProfiles, paginate}) => {
     }
 
     return (
-        <nav>
+        <nav className='paginate_nav'>
             <ul className='pagination mx-auto'>
                 {pageNumbers.map(number =>(
                     <li key={number} className='page-item mx-auto'>
