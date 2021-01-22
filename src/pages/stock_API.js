@@ -51,7 +51,6 @@ const Newsapp = () => {
       <div className='container'>
         <div className="row news_container">
 
-      
           {currentProfiles.map( list =>(
             <Stock
 
