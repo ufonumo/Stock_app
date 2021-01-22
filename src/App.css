@@ -70,7 +70,8 @@ sub.text-left {
 .stock_head{
   margin-bottom: 40px;
   padding: 1.7rem;
-  height: 650px;
+  height: 600px;
+  overflow: auto;
   border-radius: 30px;
   transition: box-shadow .4s;
   background: #f2eeee;

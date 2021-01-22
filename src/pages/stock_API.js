@@ -48,7 +48,7 @@ const Newsapp = () => {
   return (
     <div className="App ">
               
-      <div className='container'>
+      <div className='container-fluid'>
         <div className="row news_container">
 
           {currentProfiles.map( list =>(

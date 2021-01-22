@@ -74,7 +74,7 @@ const UpdateOnstocks = () => {
   };
 
     return (
-      <div className='search_stock'>
+      <div className='search_stock container pb-5'>
         <h1 className='text-center pb-4'>Search for any Stocks based on their symbols</h1>
 
         <Form inline onSubmit={getSearch} className='search_form justify-content-center'>
