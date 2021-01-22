@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b7235deb.chunk.css",
+    "main.css": "/static/css/main.4ca20f1c.chunk.css",
     "main.js": "/static/js/main.9940af8e.chunk.js",
     "main.js.map": "/static/js/main.9940af8e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c53b5083.js",
@@ -10,7 +10,7 @@
     "static/js/3.c3c52429.chunk.js": "/static/js/3.c3c52429.chunk.js",
     "static/js/3.c3c52429.chunk.js.map": "/static/js/3.c3c52429.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b7235deb.chunk.css.map": "/static/css/main.b7235deb.chunk.css.map",
+    "static/css/main.4ca20f1c.chunk.css.map": "/static/css/main.4ca20f1c.chunk.css.map",
     "static/js/2.4ca6cac6.chunk.js.LICENSE.txt": "/static/js/2.4ca6cac6.chunk.js.LICENSE.txt",
     "static/media/austin-distel-DfjJMVhwH_8-unsplash.3c9b1e60.jpg": "/static/media/austin-distel-DfjJMVhwH_8-unsplash.3c9b1e60.jpg",
     "static/media/juliana-malta-Uy0Bq8vYjk4-unsplash.de852f95.jpg": "/static/media/juliana-malta-Uy0Bq8vYjk4-unsplash.de852f95.jpg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.c53b5083.js",
     "static/js/2.4ca6cac6.chunk.js",
-    "static/css/main.b7235deb.chunk.css",
+    "static/css/main.4ca20f1c.chunk.css",
     "static/js/main.9940af8e.chunk.js"
   ]
 }
