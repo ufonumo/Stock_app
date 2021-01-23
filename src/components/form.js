@@ -7,13 +7,11 @@ import obi from "../assets/obi-onyeador-qXfD_nG4j-U-unsplash.jpg";
 import photoTwo from "../assets/juliana-malta-Uy0Bq8vYjk4-unsplash.jpg";
 import Carousel from 'react-bootstrap/Carousel';
 
-
 const FormStock = () =>{
 
     return(
       
         <div className='container-fluid fluid'>
-
               <Carousel>
                 <Carousel.Item interval={3000}>
                   <img

@@ -167,14 +167,6 @@ p.equal {
   }
 }
 
-.spinner_border{
-  padding-top: 200px ;
-}
-
-.sr-only {
-  position: relative !important;
-}
-
 .paginate_nav{
   width: 100%;
 }
@@ -193,4 +185,8 @@ img.d-block.w-100.image {
 
 .new_header h3{
   font-weight: 700;
+}
+
+.spinner{
+  margin-top: 150px !important;
 }

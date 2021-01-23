@@ -4,7 +4,7 @@ import '../App.css';
 import '../bootstrap.min.css';
 import Stock from "./stocks";
 import {Pagination} from "../components/Pagination";
-import Spinner from 'react-bootstrap/Spinner';
+import Loader from 'react-loader-spinner';
 
 const Newsapp = () => {
 
@@ -40,10 +40,8 @@ const Newsapp = () => {
   };
 
   if(loading){
-    return <Spinner animation="border" className=' spinner_border text-center' role="status">
-                <span className="sr-only">Loading...</span>
-            </Spinner>;
-    }
+    return   <Loader className='text-center  spinner' type="Circles" color="#941515" height={80} width={80} />
+  }
 
   return (
     <div className="App ">
