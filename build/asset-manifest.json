@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e785130.chunk.css",
-    "main.js": "/static/js/main.fcea5190.chunk.js",
-    "main.js.map": "/static/js/main.fcea5190.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c53b5083.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c53b5083.js.map",
-    "static/js/2.6bc2a447.chunk.js": "/static/js/2.6bc2a447.chunk.js",
-    "static/js/2.6bc2a447.chunk.js.map": "/static/js/2.6bc2a447.chunk.js.map",
-    "static/js/3.c3c52429.chunk.js": "/static/js/3.c3c52429.chunk.js",
-    "static/js/3.c3c52429.chunk.js.map": "/static/js/3.c3c52429.chunk.js.map",
+    "main.css": "/static/css/main.cc300f6f.chunk.css",
+    "main.js": "/static/js/main.c4f97b21.chunk.js",
+    "main.js.map": "/static/js/main.c4f97b21.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b30109bf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b30109bf.js.map",
+    "static/js/2.06dc83e0.chunk.js": "/static/js/2.06dc83e0.chunk.js",
+    "static/js/2.06dc83e0.chunk.js.map": "/static/js/2.06dc83e0.chunk.js.map",
+    "static/js/3.20cf71de.chunk.js": "/static/js/3.20cf71de.chunk.js",
+    "static/js/3.20cf71de.chunk.js.map": "/static/js/3.20cf71de.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.9e785130.chunk.css.map": "/static/css/main.9e785130.chunk.css.map",
-    "static/js/2.6bc2a447.chunk.js.LICENSE.txt": "/static/js/2.6bc2a447.chunk.js.LICENSE.txt",
+    "static/css/main.cc300f6f.chunk.css.map": "/static/css/main.cc300f6f.chunk.css.map",
+    "static/js/2.06dc83e0.chunk.js.LICENSE.txt": "/static/js/2.06dc83e0.chunk.js.LICENSE.txt",
     "static/media/austin-distel-DfjJMVhwH_8-unsplash.3c9b1e60.jpg": "/static/media/austin-distel-DfjJMVhwH_8-unsplash.3c9b1e60.jpg",
     "static/media/juliana-malta-Uy0Bq8vYjk4-unsplash.de852f95.jpg": "/static/media/juliana-malta-Uy0Bq8vYjk4-unsplash.de852f95.jpg",
     "static/media/news.97a4e69b.jpg": "/static/media/news.97a4e69b.jpg",
@@ -20,9 +20,9 @@
     "static/media/reality.b459b836.jpg": "/static/media/reality.b459b836.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c53b5083.js",
-    "static/js/2.6bc2a447.chunk.js",
-    "static/css/main.9e785130.chunk.css",
-    "static/js/main.fcea5190.chunk.js"
+    "static/js/runtime-main.b30109bf.js",
+    "static/js/2.06dc83e0.chunk.js",
+    "static/css/main.cc300f6f.chunk.css",
+    "static/js/main.c4f97b21.chunk.js"
   ]
 }
