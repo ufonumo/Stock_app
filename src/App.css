@@ -157,7 +157,7 @@ p.equal {
   font-size: 30px;
 }
 
-@media(max-width: 320px){
+@media(max-width: 320px) , (max-width : 360px){
   select.select {
     padding: 8px 5px 8px 7px;
   }
