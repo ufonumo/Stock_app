@@ -15,7 +15,7 @@ const FormStock = () =>{
         <div className='container-fluid fluid'>
 
               <Carousel>
-                <Carousel.Item interval={2000}>
+                <Carousel.Item interval={3000}>
                   <img
                     className="d-block w-100 image"
                     src={photoone}
@@ -35,7 +35,7 @@ const FormStock = () =>{
                   </Carousel.Caption>
                   
                 </Carousel.Item>
-                <Carousel.Item interval={2000}>
+                <Carousel.Item interval={3000}>
                   <img
                     className="d-block w-100 image"
                     src={obi}
@@ -56,7 +56,7 @@ const FormStock = () =>{
                   </Carousel.Caption>
                 
                 </Carousel.Item>
-                <Carousel.Item interval={2000}>
+                <Carousel.Item interval={3000}>
                   <img
                     className="d-block w-100 image"
                     src={photoTwo}

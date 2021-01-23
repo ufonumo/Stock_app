@@ -82,6 +82,7 @@ const UpdateOnstocks = () => {
             <Button  type="submit"  variant="outline-success">Search</Button>
         </Form>
 
+
         <div className='chart'>
           <Line
             data={chartData}
@@ -102,9 +103,19 @@ const UpdateOnstocks = () => {
                     right: 15,
                     bottom: 15
                 }
+              },
+              scales:{
+                yAxes:[
+                  {
+                    ticks:{
+                      callback: function(value, index, values){
+                        return '$ ' + value;
+                      }
+                    }
+                  }
+                ]
+              }
 
-                
-            }
             }}
           />
         </div>
